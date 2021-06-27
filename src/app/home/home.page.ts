@@ -68,5 +68,9 @@ export class HomePage {
     .catch(err => console.error(err));
   }
 
+  gotToDashboard(){
+    this.router.navigate(['dashboard']);
+  }
+
   
 }
