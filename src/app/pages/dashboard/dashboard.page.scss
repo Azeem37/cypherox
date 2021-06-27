@@ -1,0 +1,17 @@
+ion-content {
+    --ion-background-color: var(--ion-color-tertiary);
+  }
+  .new-background-color{
+    --ion-background-color: var(--ion-color-primary);
+}
+.middle-scope {
+    // position: absolute;
+    // bottom: 10%;
+    // transform: translateY(-50%);
+    
+    .favCard{
+      // border-radius: 10px;
+      border: 1px solid #ff69b461;
+      box-shadow:  -1px 10px 10px 5px rgb(250 120 147 / 70%)
+    }
+  }

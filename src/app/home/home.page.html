@@ -1,0 +1,56 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Social
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="ion-padding top-scope" *ngIf="isLoggedIn === true">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Hi, {{users.name}}</ion-card-subtitle>
+        <ion-card-title>{{users.email}}</ion-card-title>
+      </ion-card-header>
+      <img src="{{users.picture.data.url}}" width="100" alt="{{users.name}}" />
+      <ion-card-content>
+        <p>
+          <ion-button expand="full" color="secondary" (click)="logout()">
+            Logout
+            <ion-icon name="log-out"></ion-icon>
+          </ion-button>
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="ion-padding top-scope" *ngIf="isLoggedIn === false">
+    <ion-button expand="full" color="primary" (click)="fbLogin()">
+      Login with
+      <ion-icon name="logo-facebook"></ion-icon>
+    </ion-button>
+
+    <ion-button expand="full" color="primary" (click)="googleLogin()">
+      Google
+       <ion-icon name="logo-google"></ion-icon>
+     </ion-button>
+   
+  </div>
+
+  <!-- <div class="middle-scope">
+    <ion-card class="favCard">
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+  </div> -->
+
+  <div class="bottom-scope">
+   
+  </div>
+</ion-content>

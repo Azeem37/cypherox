@@ -1,0 +1,7 @@
+{
+  "name": "Cypherox",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

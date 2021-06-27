@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar class="new-background-color">
+  <ion-searchbar [(ngModel)]="searchVal" debounce="1500" (ionChange)='onSearchData($event.target.value)'></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="middle-scope">
+    <ion-card class="favCard" *ngFor="let rec of productList">
+      <ion-card-header>
+        <ion-card-title>{{ rec.title }}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        {{ rec.description }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
